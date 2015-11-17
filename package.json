@@ -1,0 +1,35 @@
+{
+  "name": "recipestolist",
+  "version": "0.0.1",
+  "description": "Build your shopping list from the recipes you want to eat.",
+  "author": "cadesalaberry",
+  "scripts": {
+    "start": "./node_modules/livereloadx/bin/livereloadx.js -p 8000 -s",
+    "watch": "./node_modules/watchify/bin/cmd.js -d -t [ babelify --presets [ react ] ] src/app.jsx -o build/bundle.js"
+  },
+  "main": "src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cadesalaberry/recipestolist"
+  },
+  "bugs": {
+    "url": "https://github.com/cadesalaberry/recipestolist/issues"
+  },
+  "keywords": [
+    "recipe",
+    "shopping list",
+    "example"
+  ],
+  "dependencies": {
+    "babel-preset-react": "^6.1.18",
+    "babelify": "^7.2.0",
+    "livereloadx": "^0.3.9",
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-mdl": "^1.0.1",
+    "watchify": "^3.6.1"
+  },
+  "private": true,
+  "analyze": true,
+  "license": "MIT"
+}
