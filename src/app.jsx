@@ -1,15 +1,19 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RecipesList from './RecipesList.jsx';
 import {
   Tab,
+  Icon,
+  Badge,
   Layout,
   Header,
   Content,
   HeaderRow,
   HeaderTabs
 } from 'react-mdl';
+
+import RecipesList from './RecipesList.jsx';
+import Cart from './Cart.jsx';
 
 
 var App = React.createClass({
@@ -32,22 +36,30 @@ var App = React.createClass({
   },
   render: function () {
 
+    var tab = this.state.currentTab;
+    console.log("Rendering AppTab " + tab);
+
+    // <Cart style={tab == 1 ? {} : {display: 'none'}} items={this.state.cart}/>
     return (
       <Layout fixedHeader fixedTabs>
         <Header>
           <HeaderRow title="Recipes To List" />
           <HeaderTabs onChange={(tabId) => { this.setState({currentTab:tabId}) }} ripple>
             <Tab>Recipes</Tab>
-            <Tab>Cart</Tab>
+            <Tab><Badge text="1">Cart</Badge></Tab>
             <Tab>Shopping List</Tab>
           </HeaderTabs>
         </Header>
         <Content>
-          {{
-            0: <RecipesList recipes={this.state.recipes}/>,
-            1: "Loading Cart...",
-            2: "Loading Shopping List...",
-          }[this.state.currentTab]}
+          <div style={tab == 0 ? {} : {display: 'none'}}>
+            <RecipesList recipes={this.state.recipes}/>
+          </div>
+          <div style={tab == 1 ? {} : {display: 'none'}}>
+            <Cart/>
+          </div>
+          <div style={tab == 2 ? {} : {display: 'none'}}>
+            Loading Shopping List...
+          </div>
         </Content>
       </Layout>
     );
