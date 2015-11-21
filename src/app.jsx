@@ -19,11 +19,6 @@ var App = React.createClass({
       recipes: [],
       cart: [],
       currentTab: 0,
-      tabs: {
-        0: <RecipesList />,
-        1: "Loading Cart...",
-        2: "Loading Shopping List...",
-      },
     };
   },
   componentDidMount: function () {
@@ -48,9 +43,11 @@ var App = React.createClass({
           </HeaderTabs>
         </Header>
         <Content>
-          <div className="page-content">
-            {this.state.tabs[this.state.currentTab]}
-          </div>
+          {{
+            0: <RecipesList recipes={this.state.recipes}/>,
+            1: "Loading Cart...",
+            2: "Loading Shopping List...",
+          }[this.state.currentTab]}
         </Content>
       </Layout>
     );
