@@ -1,14 +1,14 @@
-var React = require('react');
-var ReactMDL = require('react-mdl');
+import React from 'react';
+import {
+  CardActions,
+  IconButton,
+  CardTitle,
+  CardText,
+  CardMenu,
+  Button,
+  Card
+} from 'react-mdl';
 
-
-var CardActions = ReactMDL.CardActions;
-var IconButton = ReactMDL.IconButton;
-var CardTitle = ReactMDL.CardTitle;
-var CardText = ReactMDL.CardText;
-var CardMenu = ReactMDL.CardMenu;
-var Card = ReactMDL.Card;
-var Button = ReactMDL.Button;
 
 module.exports = React.createClass({
   getInitialState: function () {

@@ -1,6 +1,5 @@
-var React = require('react');
-var ReactMDL = require('react-mdl');
-var Recipe = require('./Recipe.jsx');
+import React from 'react';
+import Recipe from './Recipe.jsx';
 
 
 module.exports = React.createClass({
