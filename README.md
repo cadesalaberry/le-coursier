@@ -1,4 +1,4 @@
-# `recipestolist`
+# `le-coursier`
 
 
 ## How to
