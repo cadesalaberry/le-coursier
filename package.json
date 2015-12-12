@@ -1,19 +1,19 @@
 {
-  "name": "recipestolist",
+  "name": "le-coursier",
   "version": "0.0.1",
   "description": "Build your shopping list from the recipes you want to eat.",
   "author": "cadesalaberry",
   "scripts": {
     "start": "./node_modules/livereloadx/bin/livereloadx.js -p 8000 -s",
     "watch": "./node_modules/watchify/bin/cmd.js -d -t [ babelify --presets [ es2015 react ] ] src/app.jsx -o build/bundle.js"
-  },
+  },le-coursier
   "main": "src/app.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cadesalaberry/recipestolist"
+    "url": "https://github.com/cadesalaberry/le-coursier"
   },
   "bugs": {
-    "url": "https://github.com/cadesalaberry/recipestolist/issues"
+    "url": "https://github.com/cadesalaberry/le-coursier/issues"
   },
   "keywords": [
     "recipe",
