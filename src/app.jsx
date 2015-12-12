@@ -43,7 +43,7 @@ var App = React.createClass({
     return (
       <Layout fixedHeader fixedTabs>
         <Header>
-          <HeaderRow title="Recipes To List" />
+          <HeaderRow title="Le Coursier" />
           <HeaderTabs onChange={(tabId) => { this.setState({currentTab:tabId}) }} ripple>
             <Tab>Recipes</Tab>
             <Tab><Badge text="1">Cart</Badge></Tab>
