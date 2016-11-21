@@ -21,8 +21,8 @@ npm run watch
 
 ## Attain Perfection
 
-[x] Use `npm` to load `react` and `material-design-lite`
-[x] ~~Auto generate `js` from `jsx`~~ `npm run watch`
-[ ] Autorefresh browser
-[ ] Use existing mdl react library ?
-[ ] Whole website available offline
+- [x] Use `npm` to load `react` and `material-design-lite`
+- [x] ~~Auto generate `js` from `jsx`~~ `npm run watch`
+- [ ] Autorefresh browser
+- [ ] Use existing mdl react library ?
+- [ ] Whole website available offline
