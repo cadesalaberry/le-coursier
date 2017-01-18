@@ -1,0 +1,21 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - livereloadx > minimatch:
+        patched: '2017-01-18T15:25:27.430Z'
+  'npm:ms:20151024':
+    - livereloadx > debug > ms:
+        patched: '2017-01-18T15:25:27.430Z'
+    - livereloadx > send > debug > ms:
+        patched: '2017-01-18T15:25:27.430Z'
+    - livereloadx > send > ms:
+        patched: '2017-01-18T15:25:27.430Z'
+  'npm:send:20151103':
+    - livereloadx > send:
+        patched: '2017-01-18T15:25:27.430Z'
+  'npm:ws:20160104':
+    - livereloadx > ws:
+        patched: '2017-01-18T15:25:27.430Z'

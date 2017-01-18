@@ -5,7 +5,9 @@
   "author": "cadesalaberry",
   "scripts": {
     "start": "./node_modules/livereloadx/bin/livereloadx.js -p 8000 -s",
-    "watch": "./node_modules/watchify/bin/cmd.js -d -t [ babelify --presets [ es2015 react ] ] src/app.jsx -o build/bundle.js"
+    "watch": "./node_modules/watchify/bin/cmd.js -d -t [ babelify --presets [ es2015 react ] ] src/app.jsx -o build/bundle.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "main": "src/app.js",
   "repository": {
@@ -28,9 +30,11 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-mdl": "^1.0.1",
-    "watchify": "^3.6.1"
+    "watchify": "^3.6.1",
+    "snyk": "^1.24.4"
   },
   "private": true,
   "analyze": true,
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
