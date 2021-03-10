@@ -30,7 +30,7 @@
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-mdl": "^1.0.1",
-    "watchify": "^3.6.1",
+    "watchify": "^4.0.0",
     "snyk": "^1.25.2"
   },
   "private": true,
